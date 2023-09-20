@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>User Profile</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  </head>
+  <style type="text/css">
+  	a{
+  		text-decoration: none;
+  		color: black;
+  	}
+    .middle{
+   background: linear-gradient(#eaeaea,white,white);
+  }
+  .cover img{
+  height:60vh;
+  width: 100%;
+  background-position:center; 
+  background-size: cover;
+  position: relative;
+ }
+ .profile img{
+  position: relative;
+  margin-top:-75px;
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  border:5px solid white;
+ }
+ .edit-profile a{
+  padding:5px 10px; 
+  background-color: #eaeaea;
+  border-radius: 5px;
+ }
+ .dropdown button, a{
+  border:0;
+  padding: 5px 15px;
+  border-radius: 5px;
+ }
+ .dropdown button,a:hover{
+  background-color: #eaeaea;
+ }
+ .post-write img{
+  height:45px;
+  width:50px;
+  border-radius:50%;
+ }
+ .post-write input{
+  width: 100%;
+  padding: 4px 7px;
+  border-radius: 10px;
+  border:0;
+  background-color: #eaeaea;
+  margin-left: 10px;
+ }
+  </style>
+  <body >
+  	<a href="main.html" class="p-2 bg-success text-light fixed-top" style="cursor:pointer;width: 50px;">Back</a>
+
+   <div class="middle">
+     <div class="container col-md-9 ">
+        <div class="cover">
+           <img src="./image/img4.jpg">
+        </div>
+        <div class="container profile-area row">
+           <div class="profile col-md-8 row">
+             <div class="col-md-3">
+               <img src="./image/img4.jpg">
+               <!-- <form> -->
+                 <input type="file" id="profile-pic" name="">
+                 <button id="upload" onclick="profilePic()">Upload</button>
+               <!-- </form> -->
+             </div>
+             <div class="col-md-9 p-2">
+               <h1>shakhor das</h1>
+               <p>1125 friends</p>
+             </div>
+           </div>
+           <div class="col-md-4 edit-profile p-2">
+             <a class="bg-primary m-3 text-light" href="a">Add story</a>
+             <a href="a">Edit profile</a>
+           </div><hr>
+           <nav class="navbar-nav ">
+             <li class="nav-item d-flex">
+                 <a href="a" class="nav-link">Posts</a>
+                 <a href="a" class="nav-link">About</a>
+                 <a href="a" class="nav-link">Fruebds</a>
+                 <a href="a" class="nav-link">Photos</a>
+                 <div class="dropdown">
+                   <button class="dropdown-toggle bg-white" dropdown="data-toggle">More</button>
+                   <ul class="dropdown-menu">
+                     <li><a href="a" class="dropdown-item ">sport</a></li>
+                     <li><a href="a" class="dropdown-item ">Music</a></li>
+                     <li><a href="a" class="dropdown-item ">Movies</a></li>
+                     <li><a href="a" class="dropdown-item ">Games</a></li>
+                     <li><a href="a" class="dropdown-item ">sport</a></li>
+                   </ul>
+                 </div>
+             </li>
+           </nav>
+         </div>
+      </div>
+   </div>
+   
+   <div class="profile-body">
+     <div class="container col-md-9">
+       <div class="row">
+         <div class="col-md-6 p-md-2 shodow p-2">
+           <div class="bg-white">intro</div>
+         </div>
+
+         <div class="post-write col-md-6 p-md-2 shodow p-2">
+           <div class="bg-white p-1">
+             <div class="p-2 d-flex">
+               <img src="./image/img4.jpg">
+               <input type="text" placeholder="what's on your mind?">
+             </div><hr>
+             <ul class="list-unstyled d-flex">
+               <li><a href="a">Live video</a></li>
+               <li><a href="a">photo/video</a></li>
+               <li><a href="a">Live event</a></li>
+             </ul>
+           </div>
+         </div>
+       </div>  
+     </div>
+   </div>
+  
+ 
+
+
+
+
+
+
+ <script type="text/javascript">
+  
+ </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+  </body>
+</html>
